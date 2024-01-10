@@ -59,7 +59,7 @@
             <archive>
               <manifest>
                 <mainClass>
-                  org.dhiawebdev.exercices.chapter1.choices.FindGuitarTester
+                  org.dhiawebdev.exercices.chapter1.encapsulation.FindGuitarTester
                 </mainClass>
               </manifest>
             </archive>
