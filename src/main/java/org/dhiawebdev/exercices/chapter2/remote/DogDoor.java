@@ -4,14 +4,14 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class DogDoor {
-    private double closingDelay;
+    private int closingDelay;
     private boolean open;
 
     public DogDoor() {
         this.open = false;
     }
 
-    public void setClosingDelay(double delay) {
+    public void setClosingDelay(int delay) {
         this.closingDelay = delay;
     }
 
@@ -24,7 +24,7 @@ public class DogDoor {
                 close();
                 timer.cancel();
             }
-        }, 5000);
+        }, closingDelay);
 
     }
 
