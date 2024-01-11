@@ -8,7 +8,9 @@ public class DogDoorSimulator {
     public static void main(String[] args) {
         // mainPath();
 
-        fidoTakesHisTime();
+        // fidoTakesHisTime();
+
+        barkRecognizerPath();
     }
 
     private static void mainPath() {
@@ -44,5 +46,29 @@ public class DogDoorSimulator {
         remote.pressButton();
         System.out.println("Fido is inside");
 
+    }
+
+    private static void barkRecognizerPath() {
+
+        DogDoor door = new DogDoor();
+        BarkRecongnizer barkRecongnizer = new BarkRecongnizer(door);
+        Remote remote = new Remote(door);
+
+        System.out.println("Fido starts barking");
+        barkRecongnizer.recognize("Woof");
+
+        System.out.println("Fido has gone outisde");
+        System.out.println("Fido is all done");
+
+        try {
+            Thread.currentThread().sleep(10000);
+        } catch (InterruptedException e) {
+            System.out.println("Interrupted");
+        }
+        System.out.println("But he is stuck outside");
+        System.out.println("Fido starts barking");
+
+        barkRecongnizer.recognize("Woof");
+        System.out.println("Fido is back inside");
     }
 }
