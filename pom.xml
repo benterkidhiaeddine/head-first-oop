@@ -59,7 +59,7 @@
             <archive>
               <manifest>
                 <mainClass>
-                  org.dhiawebdev.exercices.chapter1.encapsulation.FindGuitarTester
+                  org.dhiawebdev.exercices.chapter2.remote.DogDoorSimulator
                 </mainClass>
               </manifest>
             </archive>
