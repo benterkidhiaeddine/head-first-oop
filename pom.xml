@@ -59,7 +59,7 @@
             <archive>
               <manifest>
                 <mainClass>
-                  org.dhiawebdev.exercices.chapter2.remote.DogDoorSimulator
+                  org.dhiawebdev.exercices.chapter4.DogDoorSimulator
                 </mainClass>
               </manifest>
             </archive>
